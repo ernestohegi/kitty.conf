@@ -16,6 +16,8 @@ Favourite configuration for my Kitty terminal.
     mv kitty.conf ~/.config/kitty
 ```
 
+3. Apply changes by restarting Kitty or reloading the configuration with `CTRL+SHIFT+F5`.
+
 ## Themes
 
 - Clone https://github.com/dexpota/kitty-themes into your config directory.
