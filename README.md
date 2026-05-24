@@ -1,23 +1,32 @@
-# Kitty Terminal Configuration
+# 🐱 Kitty Terminal Configuration
 
-Favourite configuration for my Kitty terminal.
+Personal Kitty configuration files.
 
-## Installation
+## 🚀 Installation
 
-1. Clone this repository to your local machine:
+Choose one of the options below.
 
-```bash
-    git clone git@github.com:ernestohegi/kitty.conf.git
-```
-
-2. Move the contents to your Kitty configuration directory:
+### ✅ Option 1: Clone directly into Kitty config (recommended)
 
 ```bash
-    mv kitty.conf ~/.config/kitty
+mv ~/.config/kitty ~/.config/kitty.backup.$(date +%Y%m%d-%H%M%S) 2>/dev/null || true
+git clone git@github.com:ernestohegi/kitty.conf.git ~/.config/kitty
 ```
 
-3. Apply changes by restarting Kitty or reloading the configuration with `CTRL+SHIFT+F5`.
+### 📁 Option 2: Clone elsewhere, then copy into `~/.config/kitty`
 
-## Themes
+```bash
+git clone git@github.com:ernestohegi/kitty.conf.git
+mkdir -p ~/.config/kitty
+cp -r kitty.conf/* ~/.config/kitty/
+```
 
-- Clone https://github.com/dexpota/kitty-themes into your config directory.
+🔄 Restart Kitty, or reload the config with `Ctrl+Shift+F5`.
+
+## 🎨 Themes
+
+Clone [dexpota/kitty-themes](https://github.com/dexpota/kitty-themes) into your Kitty config directory:
+
+```bash
+git clone https://github.com/dexpota/kitty-themes.git ~/.config/kitty/kitty-themes
+```
